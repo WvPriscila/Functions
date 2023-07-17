@@ -14,5 +14,20 @@ def Posicionar(elemento, lista):
             lista.append(elemento)
     print(lista)
     return lista
-  
+
+#-----------------------------------------------------------------------------#
+
+a = 100
+geracoes = range(a)
+i = None
+def minha_funcao():
+    global i
+    for i in geracoes:
+        print(i)
+minha_funcao()
+print(i)  # Imprime o último valor atribuído a 'i' no loop
+
+#-----------------------------------------------------------------------------#
+
+
 
