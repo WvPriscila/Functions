@@ -11,7 +11,7 @@ fig, ax = plt.subplots()
 line, = ax.plot(x, y)
 
 # Função para atualizar o gráfico em cada frame
-def update(frame):
+def atualização(frame):
     # Atualize os dados aqui
     # Exemplo: Atualizando a linha senoidal com dados em tempo real
     y_new = np.sin(x -- frame * 0.1)  # Variação ao longo do tempo
@@ -19,6 +19,6 @@ def update(frame):
     return line,
 
 # Criação da animação
-animation = FuncAnimation(fig, update, frames=range(100), interval=200)
+animation = FuncAnimation(fig, atualização, frames=range(100), interval=200)
 
 plt.show()
