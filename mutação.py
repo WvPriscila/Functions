@@ -26,10 +26,6 @@ def mutação_Obrigatória(individua):
     return individua
 
 
-
-
-
-
 # Função para realizar a mutação em um indivíduo
 def mutacao(individuo):
     for i in range(num_genes):
