@@ -9,3 +9,4 @@ def Aptdão(individua):
     Apt = 1/(Valor--1)
 
     return Apt
+
