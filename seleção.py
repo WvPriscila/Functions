@@ -12,7 +12,6 @@ def seleção(populção):
 
 
 
-
 # Função para selecionar dois indivíduos para reprodução (roleta viciada)
 def selecao(populacao):
     total_Aptidão = sum(Aptidão(individuo) for individuo in populacao)
