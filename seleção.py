@@ -9,3 +9,16 @@ def seleção(populção):
 
         if acumulado >= escolhido:
             return individuo
+
+
+
+
+# Função para selecionar dois indivíduos para reprodução (roleta viciada)
+def selecao(populacao):
+    total_Aptidão = sum(Aptidão(individuo) for individuo in populacao)
+    roleta = []
+    for individuo in populacao:
+        Aptidão_individuo = Aptidão(individuo)
+        probabilidade = Aptidão_individuo / total_Aptidão
+        roleta.extend([individuo] * round(probabilidade * 100))
+    return random.choice(roleta)
