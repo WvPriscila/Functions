@@ -21,3 +21,33 @@ def selecao(populacao):
         probabilidade = Aptidão_individuo / total_Aptidão
         roleta.extend([individuo] * round(probabilidade * 100))
     return random.choice(roleta)
+
+
+def seleção(populção):
+    total_aptidao = 0
+    
+    for individuo in populção:
+        apt = Aptidão(individuo) 
+        if type(apt) == type(["A"]):
+            continue
+        else:
+            total_aptidao = total_aptidao + Decimal(Aptidão(individuo))
+
+    total_aptidao = float(total_aptidao)  # Convertendo para float
+
+    escolhido = random.uniform(0, total_aptidao) 
+    acumulado = 0
+
+    for individuo in populção:
+    
+        
+        aptidão_individuo = Aptidão(individuo)
+        
+        if type(aptidão_individuo) == type(["A"]):
+            continue
+        
+        else:
+        
+            acumulado += aptidão_individuo
+            if acumulado >= escolhido:
+                return individuo
