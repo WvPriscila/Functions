@@ -13,17 +13,6 @@ def mutação_Obrigatória(individua):
     return individua
 
 
-def Possivel_mutação(individua):
-    for i in range(len(individua)):
-        if random.random() < taxa_mutacao:
-            individua[i] = random.randint(0, 9)
-    return individua
-
-
-def mutação_Obrigatória(individua):
-    for i in range(len(individua)):
-        individua[i] = random.randint(0, 9)
-    return individua
 
 
 # Função para realizar a mutação em um indivíduo
