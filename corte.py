@@ -10,7 +10,18 @@ for i in range(0, len(A) - (len(A)%ponto_corte), ponto_corte):
 
 lista.append(resto_lista)
 print(lista)
+#------------------------------------------------------------------------------#
 
+""" inversa"""
+B = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+ponto_corte = 6
+
+for i in range(0, len(B), len(B) + (len(B)%ponto_corte)):
+    print(B[i:i + len(B) - ponto_corte])
+
+
+resto_lista =B[-(len(B)-(len(B)%ponto_corte)):] 
+print(resto_lista)
 
 #------------------------------------------------------------------------------#
 
