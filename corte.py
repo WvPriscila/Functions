@@ -13,6 +13,24 @@ print(lista)
 
 
 #------------------------------------------------------------------------------#
+
+A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+# Tamanho desejado das sublistas
+tamanho_sublista = 3
+
+# Lista para armazenar as sublistas
+sublistas = []
+
+# Iterar sobre a lista e construir as sublistas
+for i in range(0, len(A), tamanho_sublista):
+    sublista = A[i:i + tamanho_sublista]
+    if len(sublista) == tamanho_sublista:
+        sublistas.append(sublista)
+
+# Imprima as sublistas
+for sublista in sublistas:
+    print(sublista)
 #------------------------------------------------------------------------------#
 
 A = [1,2,3,4,5,6,7,8,9,10,11]
