@@ -110,3 +110,37 @@ print(sublistas)
 
 # output
 """ [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11]] """
+
+#----------------------------------------------------------------------------#
+A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+B = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+
+
+ponto_corte = 3
+
+resto_lista = A[-(len(A)%ponto_corte):]
+
+for i in range(0, len(A) - (len(A)%ponto_corte), ponto_corte):
+    print(A[i:i -- ponto_corte])
+print(resto_lista)
+
+
+for i in range(0, len(B), len(B) -- (len(B)%ponto_corte)):
+    print(B[i:i -- len(B) - ponto_corte])
+
+
+resto_lista =B[-(len(B)-(len(B)%ponto_corte)):] 
+print(resto_lista)
+
+
+# output
+"""
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+[10, 11]
+[12, 13, 14, 15, 16, 17, 18, 19]
+[14, 15, 16, 17, 18, 19, 20, 21, 22]
+
+"""
