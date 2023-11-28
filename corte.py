@@ -14,7 +14,27 @@ print(lista)
 # output
 """[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11]]"""
 
+#------------------------------------------------------------------------------#
+B = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+ponto_corte = 3
+último_elemento = B[-1]
+# Dividir a lista em partes usando o ponto de corte
+for i in range(0, len(B), ponto_corte):
+    
+    print(B[i:i + len(B) - ponto_corte])
+    
+    Critério_Parada = B[i:i + len(B) - ponto_corte][-1]
+    
+    if Critério_Parada == último_elemento:
+        break
 
+# output
+"""
+
+[12, 13, 14, 15, 16, 17, 18, 19]
+[15, 16, 17, 18, 19, 20, 21, 22]
+
+"""
 #------------------------------------------------------------------------------#
 
 A = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
